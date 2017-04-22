@@ -1,0 +1,2 @@
+rem docker run --name mycassandra -d -e CASSANDRA_SEEDS="$(docker inspect --format='{{ .NetworkSettings.IPAddress }}' mycassandra )" -p 7000:7000 cassandra:3.10
+docker run --name mycassandra -d -v %dockerhome%/vol/cassandra:/var/lib/cassandra -p 9160:9160 -p 9042:9042 -p 7199:7199 cassandra:3.10

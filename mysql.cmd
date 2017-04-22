@@ -1,0 +1,1 @@
+docker run --name mysql -e MYSQL_ROOT_PASSWORD=mono -p 3306:3306 -v %dockerhome%/vol/mysql:/var/lib/mysql --rm -d mysql:8.0.0
